@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #4e4e4e;
+    margin-bottom: 20px;
+}
+
+#reiniciar {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #ffdddd;
+    border: 2px solid #cc8888;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#reiniciar:hover {
+    background-color: #ffcccc;
+}
+
+.contenedor-ciclos {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.ciclo {
+    background-color: #f0fdf0;
+    border: 2px solid #b2d8b2;
+    border-radius: 10px;
+    padding: 10px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ciclo h2 {
+    font-size: 16px;
+    color: #4c8c4c;
+    margin-bottom: 10px;
+}
+
+.curso {
+    background-color: #e6f5e6;
+    border: 2px solid #9ccc9c;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 12px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 180px;
+}
+
+.curso .nombre {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.curso button {
+    background-color: #a3e4a3;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+.curso button:hover {
+    background-color: #80d480;
+}
+
+.curso.aprobado {
+    background-color: #b8e6b8;
+    border-color: #66bb66;
+    transform: scale(1.05);
+}
+
+.curso.bloqueado {
+    opacity: 0.5;
+    pointer-events: none;
+}
